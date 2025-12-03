@@ -3,14 +3,27 @@
 }
 
 .full_height_contact {
-  min-height: 50vh;
-  height: 50%;
+  // min-height: 50vh;
+  // height: 100%;
+  min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 25px 0 35px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
+
+.full_height_skill {
+  // min-height: 50vh;
+  // height: 100%;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 0 35px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
 .text-justify {
   text-align: justify;
 }
