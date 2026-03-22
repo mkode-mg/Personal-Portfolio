@@ -1,0 +1,365 @@
+<app-buttom-top *ngIf="showScroll$ | async" (scrollToTop)="onScrollToTop()">
+</app-buttom-top>
+
+<!-- Navabar  -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container flex-lg-column">
+    <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+      <span class="h4 d-block d-lg-none">Build with MK</span>
+    </a>
+    <button #navbarToggler class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+        <li class="nav-item">
+          <span class="h3 d-none d-lg-block text-brand">Mahesh K</span>
+        </li>
+        <li class="nav-item" [class.active]="activeNavItem === 'home'">
+          <a (click)="collapseNav()" class="nav-link" href="#home"> Home </a>
+        </li>
+
+        <li class="nav-item" [class.active]="activeNavItem === 'skill'">
+          <a (click)="collapseNav()" class="nav-link" href="#skill">Skill</a>
+        </li>
+
+        <li class="nav-item" [class.active]="activeNavItem === 'work'">
+          <a (click)="collapseNav()" class="nav-link" href="#work">Project</a>
+        </li>
+
+        <li class="nav-item" [class.active]="activeNavItem === 'about'">
+          <a (click)="collapseNav()" class="nav-link" href="#about"> About </a>
+        </li>
+      </ul>
+    </div>
+    <div class="social-icons-2 d-none d-lg-block">
+      <a href="https://github.com/mPrograms-mg" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/mahesh-kshirsagar-a4b330173" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="mailto:kshirsagarm773@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div id="content-wrapper">
+  <!-- Home section -->
+  <section id="home" class="fill-height bg-dark px-lg-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold">
+            Hi, I'm <span class="headName">Mahesh Kshirsagar</span>
+          </h1>
+          <p class="lead mt-2 mb-2">
+            I'm a Software Engineer with experience in web development, specializing in JavaScript and frontend
+            technologies like Angular and
+            React, Node. I have strong problem-solving skills and a passion for continuous learning. I'm always eager to
+            share knowledge publicly.
+          </p>
+          <div class="row mb-3">
+            <div class="social-icons">
+              <a href="mailto:kshirsagarm773@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/mahesh-kshirsagar-a4b330173" target="_blank"><i
+                  class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/mPrograms-mg" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+          <a href="" onclick="window.open('../assets/Mahesh_Kshir.pdf')" target="_blank" class="btn btn-brand">
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill -->
+  <section id="skill" class="full_height_skill">
+    <div class="container">
+      <div class="bg-base p-4 rounded-4">
+        <div class="grid-container">
+          <div class="grid-item">
+            <img alt="html5"
+              src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+          </div>
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=whites"
+              alt="css3" />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+              alt="javascript" />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+              alt="typescript" />
+          </div>
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+              alt="angular" />
+          </div>
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+              alt="react" />
+          </div>
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+              alt="bootstrap" />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+              alt="tailwind-css" />
+          </div>
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+              alt="github" />
+          </div>
+          <div class="grid-item">
+            <img alt="git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white"
+              alt="Material--UI" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/Bitbucket-0747a6?style=for-the-badge&logo=bitbucket&logoColor=white"
+              alt="bitbucket" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"
+              alt="jira" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/PrimeNG-337AB7?style=for-the-badge&logo=logoColor=white"
+              alt="PrimeNg" />
+          </div>
+
+          <div class="grid-item">
+            <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+              alt="Node" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="fill-height bg-dark px-lg-5">
+    <div class="container">
+      <div class="row pb-4" data-aos="fade-up">
+        <div class="col-lg-8">
+          <h4 class="text-brand">Project</h4>
+        </div>
+      </div>
+
+      <div class="row d-flex">
+        <div class="col-lg-4 mb-4 d-flex">
+          <div class="card-custom rounded-4 bg-base shadow-effect flex-fill">
+            <div class="card-custom-content p-4">
+              <h4>Dynamic Admin</h4>
+              <p class="text">
+                Developed a fully dynamic admin panel to manage website content, user roles, blogs, and HR operations.
+                It enables administrators to update sections, publish blogs, and handle workflows without any code
+                changes.
+              </p>
+              <p class="text">Tech/Tool - Angular, ngZorro, .Net API.</p>
+              <a href="https://www.prolanceit.com/" target="_blank" class="link-custom">admin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 d-flex">
+          <div class="card-custom rounded-4 bg-base shadow-effect flex-fill">
+            <div class="card-custom-content p-4">
+              <h4>MarketTime</h4>
+              <p class="text">
+                MarketTime offers B2B Wholesalers, Sales Agencies, and Retail
+                Buyers a unified B2B order writing and B2B ecommerce platform.
+                Write more orders on any device with our wholesale order
+                management software.
+              </p>
+              <p class="text">Tech/Tool - Angular, PrimeNG, Java, AWS.</p>
+              <a href="https://markettimeqa.com" target="_blank" class="link-custom">markettime</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- -->
+
+        <div class="col-lg-4 mb-4 d-flex">
+          <div class="card-custom rounded-4 bg-base shadow-effect">
+            <div class="card-custom-content p-4">
+              <h4>Web E-Store</h4>
+              <p class="text">
+                Web e-commerce store using fake api, created frontend UI using
+                Angular and Angular Material. Add Stripe payment gateway.
+              </p>
+              <p class="text">
+                Tech/Tool - Angular, Angular Material, Fake Store API, Netlify.
+              </p>
+              <a href="https://web-fake-store.netlify.app" class="link-custom" target="_blank">web-store</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 d-flex">
+          <div class="card-custom rounded-4 bg-base shadow-effect flex-fill">
+            <div class="card-custom-content p-4">
+              <h4>eGoldWSMP</h4>
+              <p class="text">
+                eGoldWSMP Admin Dashabord web application for shipping platform. Created responsive UI & Collaborate
+                with the backend team & integrated AWS REST API
+              </p>
+              <p class="text">
+                Tech/Tool - Angular, Angular Material, Bootstrap, CKEditor, AWS
+                REST API, AWS.
+              </p>
+              <a href="#" class="link-custom" target="_blank">Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 d-flex">
+          <div class="card-custom rounded-4 bg-base shadow-effect flex-fill">
+            <div class="card-custom-content p-4">
+              <h4>Mahesh Digital-CV</h4>
+              <p class="text">
+                This is Digital-CV mean brigf information about my exprience and
+                eduction and skill. This project created using Html, Css,
+                Javascript and Deploy on Netlify.
+              </p>
+              <p class="text">Tech/Tool - HTML, CSS, Javascript, Github, Netlify.</p>
+              <a href="https://maheshk-cv.netlify.app/" target="_blank" class="link-custom">digital-cv</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 d-flex">
+          <div class="card-custom rounded-4 bg-base shadow-effect">
+            <div class="card-custom-content p-4">
+              <h4>Shopkeeper</h4>
+              <p class="text">
+                Developed Dashabord web application for Shop using Angular CORE
+                UI. Created responsive UI & integrated Node REST API.
+              </p>
+              <p class="text">
+                Tech/Tool - Angular, Angular CORE UI, Angular DataTables.
+              </p>
+              <a href="#" class="link-custom" target="_blank">Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="fill-height px-lg-5">
+    <div class="container">
+      <div class="row pb-4" data-aos="fade-up">
+        <div class="col-lg-8">
+        </div>
+      </div>
+      <div class="row gy-5">
+        <div class="col-lg-12">
+          <div class="row gy-4 mb-2">
+            <div class="col-12">
+              <div class="bg-base p-4 rounded-4 shadow-effect">
+                <h5>Web Developer</h5>
+                <p class="text-brand mb-2">
+                  ProLance IT, Surat (Dec 2024 - Sept 2025)
+                </p>
+                <p class="mb-0 text-justify">
+                  As a Web Developer, I specialize in developing, enhancing,
+                  and maintaining responsive web apps using Angular. Developed a fully dynamic UI end-to-end admin panel
+                  to manage an organization’s website content.The platform allows administrators to update website
+                  sections, publish blogs, and handle HR workflows without code changes. <br /><br />
+
+                  I build new features, improve existing modules, and fix bugs to maintain product quality. My work
+                  emphasizes creating efficient, scalable, and user-friendly solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-4 mb-2">
+            <div class="col-12">
+              <div class="bg-base p-4 rounded-4 shadow-effect">
+                <h5>Software Engineer</h5>
+                <p class="text-brand mb-2">
+                  Compsulting, Surat (Apr 2024 - Sept 2025)
+                </p>
+                <p class="mb-0 text-justify">
+                  As a Software Engineer, I specialize in developing, enhancing,
+                  and maintaining responsive web apps using Angular. My role
+                  involves close collaboration with designers and backend
+                  engineers to ensure seamless integration and user-centric
+                  features. <br /><br />
+
+                  I am responsible for implementing new features, improving
+                  existing functionalities, and resolving bugs to maintain high
+                  product quality. I focus on delivering efficient, scalable,
+                  user-friendly solutions that drive the product's success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-4 mb-2">
+            <div class="col-12">
+              <div class="bg-base p-4 rounded-4 shadow-effect">
+                <h5>Software Engineer Trainee</h5>
+                <p class="text-brand mb-2">
+                  Narola Infotech, Surat (Aug 2022 - March 2024)
+                </p>
+                <p class="mb-0 text-justify">
+                  eGold Operation Panel: - Develop web applications to
+                  effectively manage the operation of the product, orders &
+                  courier delivery operations. <br /><br />
+                  ShopKeeper: - Develop web applications to assist small &
+                  medium-sized retail businesses in managing their operations
+                  effectively. - ShopKeeper Tracks inventory efficiently &
+                  maintains a customer database within the application.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <!-- <section id="contact" class="full_height_contact bg-dark">
+    <div class="container">
+      <div class="row justify-content-center text-center pb-2" data-aos="fade-up">
+        <div class="col-lg-8">
+          <h2>Let's Connect</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="social-icons">
+          <a href="mailto:kshirsagarm773@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mahesh-kshirsagar-a4b330173" target="_blank"><i
+              class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/mPrograms-mg" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://x.com/mPrograms92" target="_blank"><i class="fab fab-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="row gy-4 justify-content-center">
+        <div class="col-auto">
+          <p class="mb-0">
+            Created by <span class="text-brand"> Mahesh Kshirsagar </span> |
+            <i class="fa fa-copyright"></i> 2024 All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+</div>
